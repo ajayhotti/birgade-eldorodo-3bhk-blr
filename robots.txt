@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ajayhotti.github.io/birgade-eldorodo-3bhk-blr/sitemap.xml
