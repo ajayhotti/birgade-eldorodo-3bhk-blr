@@ -141,3 +141,7 @@
 
 ### Pooja / Temple Unit
 ![Pooja Unit in Living Room](images/Pooja_Unit_Living_Room.JPG)  
+
+
+## 🎥 Apartment Tour Video
+[▶️ Watch Video](videos/Apartment_Tour.mp4)
