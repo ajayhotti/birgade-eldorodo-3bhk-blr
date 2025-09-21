@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- Enhanced event tracking -->
+  <script>
+    // Track outbound links
+    function trackOutboundLink(url, category) {
+      gtag('event', 'click', {
+        'event_category': category,
+        'event_label': url,
+        'transport_type': 'beacon'
+      });
+    }
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Luxurious 3 BHK Semi-Furnished Apartment (1043 SFT) for Rent in Brigade El Dorado, Feldspar Tower, Near Bangalore Airport. Premium amenities include infinity pool, gym, and more.">
@@ -60,8 +79,8 @@
       <p class="property-price">💰 Contact for Best Rental Price</p>
     </div>
     <div class="cta-buttons">
-      <a href="tel:+919902701555" class="btn" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_action': 'Call'});">📞 Call Now</a>
-      <a href="https://wa.me/919902701555" class="btn whatsapp" onclick="gtag('event', 'click', {'event_category': 'Contact', 'event_action': 'WhatsApp'});">💬 WhatsApp</a>
+      <a href="tel:+919902701555" class="btn" onclick="trackOutboundLink('tel:+919902701555', 'Phone Call')">📞 Call Now</a>
+    <a href="https://wa.me/919902701555" class="btn whatsapp" onclick="trackOutboundLink('whatsapp', 'WhatsApp')">💬 WhatsApp</a>
     </div>
   </header>
 
